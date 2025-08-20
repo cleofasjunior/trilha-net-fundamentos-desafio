@@ -1,38 +1,51 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
+# DIO - Trilha .NET - Fundamentos 🚗
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+Este projeto foi desenvolvido como parte do desafio da trilha de Fundamentos .NET da [DIO](https://www.dio.me), com o objetivo de aplicar os conceitos essenciais aprendidos durante o módulo.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+## Desafio
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
+O desafio consistiu em construir um sistema simples de gerenciamento de estacionamento, capaz de:
+- Adicionar veículos,
+- Remover veículos (calculando o valor devido),
+- Listar todos os veículos estacionados.
+
+Para isso, foi necessário implementar uma classe `Estacionamento`, seguindo o diagrama proposto, e elaborar um menu interativo para facilitar a operação pelo usuário.
+
+## Aprendizados e Habilidades Desenvolvidas
+
+Durante a realização deste projeto, adquiri e aprimorei diversas competências, entre elas:
+
+- **Programação orientada a objetos (POO):** Criação e manipulação de classes, atributos e métodos, reforçando os pilares da POO com foco em encapsulamento.
+- **Manipulação de listas:** Utilização de coleções (List<string>) para armazenar e gerenciar dados dinâmicos (placas dos veículos).
+- **Interação com o usuário:** Implementação de um menu interativo em console, trabalhando com entrada e saída de dados.
+- **Lógica de negócios:** Cálculo do valor a ser cobrado com base no tempo de permanência e regras de negócio definidas.
+- **Validação e tratamento de dados:** Verificação da existência de veículos antes da remoção e mensagens informativas para o usuário.
+- **Organização e clareza de código:** Seguindo boas práticas e instruções comentadas ("TODO"), garantindo a qualidade da implementação.
+
+## Experiência Prática
+
+Este projeto foi fundamental para consolidar minha base em .NET e C#. A experiência proporcionou uma visão prática de como estruturar sistemas reais, lidar com requisitos, implementar regras de negócio e pensar em usabilidade.
+
+Além disso, serviu como exercício para:
+- Entender melhor o ciclo de desenvolvimento de uma solução do início ao fim,
+- Refletir sobre possíveis melhorias e refatorações futuras,
+- Explorar recursos do .NET para aplicações de console.
+
+## Como Executar
+
+1. Clone este repositório.
+2. Abra o projeto em seu editor de preferência.
+3. Compile e execute o programa.
+4. Utilize o menu para cadastrar, remover e listar veículos.
+
+## Imagem do Diagrama
+
 ![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
 
-A classe contém três variáveis, sendo:
+## Sobre o desafio DIO
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+Mais detalhes sobre o desafio podem ser encontrados em: [DIO - Trilha .NET](https://www.dio.me)
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+---
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
-
-A classe contém três métodos, sendo:
-
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
-
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
-
-
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+**Esse projeto representa um importante passo na minha jornada como desenvolvedor .NET, agregando valor prático e teórico para novos desafios!**
